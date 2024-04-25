@@ -12,28 +12,27 @@ const options = {
     .then(response => response.json()) //JSON 형식으로 파싱
     .then(data => { // 파싱된 데이터가 전달되면 실행
         console.log("Fetched data:", data); 
-        const movies = data['results']; //results에 해당하는 데이터 가져옴 
+        const movies = data.results; //results에 해당하는 데이터 가져옴 
         const cardList = document.querySelector('.movie-block'); //movie-block 섹션 선택
         cardList.innerHTML = ''; //초기화 
 
-        movies.forEach((a) => { //result에서 가져온 데이터를 순회하며 각 요소에 대한 처리 수행 
-            let _title = a['title']; // 제목가져오기
-            let _overview = a['overview']; // 줄거리 가져오기
-            let _poster_path = a['poster_path']; // 포스터 경로 가져오기
-            let _vote_average = a['vote_average']; // 평점 가져오기 
-            let _id = a['id']; //고유 ID 가져오기
+        movies.forEach((movie) => {
+            const movieCard = document.createElement('div'); // 새로운 div 생성
+            movieCard.className = 'movie-card'; // 클래스 이름 설정
+            movieCard.dataset.id = movie.id; // 고유 ID 설정
 
-            let temp_html = `
-            <div class = "movie-card" data-id="${_id}>
-                <img src= "https://image.tmdb.org/t/p/w500/${_poster_path}" alt="${_title}" />
-                <h3>${_title} </h3>
-                <p>${_overview} </p>
-                <p> 평점: ${_vote_average} </p>
+            const Content = `
+                <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}" />
+                <h3>${movie.title}</h3>
+                <p>${movie.overview}</p>
+                <p>평점: ${movie.vote_average}</p>
             `;
-            cardList.innerHTML += temp_html; //새로운 movie-block 추가
+
+            movieCard.innerHTML = Content; // 'movie-card'에 내용 설정
+            cardList.appendChild(movieCard); // 'movie-block'에 'movie-card' 추가
         });
     })
     .catch(err => {
         console.error('error', err)
-    }); // 에러 처리
+    }); // 에러 잡아야하니까 catch 사용 
 
