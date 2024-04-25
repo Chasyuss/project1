@@ -30,9 +30,13 @@ const options = {
 
             movieCard.innerHTML = Content; // 'movie-card'에 내용 설정
             cardList.appendChild(movieCard); // 'movie-block'에 'movie-card' 추가
+
+            //이벤트 리스너 사용해서 클릭시 카드 ID 출력하게 함
+            movieCard.addEventListener('click', () => {
+                alert(`영화 ID: ${movie.id}`); // 카드 ID 출력
+            });
         });
     })
     .catch(err => {
         console.error('error', err)
     }); // 에러 잡아야하니까 catch 사용 
-
