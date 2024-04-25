@@ -25,7 +25,7 @@ const options = {
 
             let temp_html = `
             <div class = "movie-card" data-id="${_id}>
-                <img src = "https://image.tmdb.org/t/p/w500/${_poster_path}" alt="${_title}" />
+                <img src= "https://image.tmdb.org/t/p/w500/${_poster_path}" alt="${_title}" />
                 <h3>${_title} </h3>
                 <p>${_overview} </p>
                 <p> 평점: ${_vote_average} </p>
