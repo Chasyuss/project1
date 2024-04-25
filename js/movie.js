@@ -22,10 +22,10 @@ const options = {
             movieCard.dataset.id = movie.id; // 고유 ID 설정
 
             const Content = `
-                <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}" />
-                <h3>${movie.title}</h3>
-                <p>${movie.overview}</p>
-                <p>평점: ${movie.vote_average}</p>
+                <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" class ="movie_img" alt="${movie.title}" />
+                <h3 class="movie_title">${movie.title}</h3>
+                <p class ="movie_overview" >${movie.overview}</p>
+                <p class ="vote_average">평점: ${movie.vote_average}</p>
             `;
 
             movieCard.innerHTML = Content; // 'movie-card'에 내용 설정
