@@ -10,10 +10,11 @@
 <body>
     <header>
         <h2 class="logo"> 최고 평점 영화 컬렉션 </h2>
- 
-        <form class="search">
-            <input type="text" placeholder="검색어를 입력하세요" />
-            <button type="submit"> 검색 </button>
+
+        <!--새로고침 수정 -->
+        <form class="search" onsubmit="return false;">  
+            <input type="text" id= "value" placeholder="검색어를 입력하세요" onkeydown="preventEnter(event)"/>
+            <button type="submit" onclick="filter()"> 검색 </button>
         </form>
     </header>
 
@@ -27,5 +28,6 @@
     </section>
 
     <script src="./js/movie.js"></script>
+    <script src="./js/search.js"></script>
 </body>
 </html>
