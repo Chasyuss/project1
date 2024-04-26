@@ -6,8 +6,6 @@ const options = {
     }
   };
 
-
-
   const url = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
   
   fetch(url, options) // 응답 요청
