@@ -15,7 +15,9 @@ TMDB를 사용하여 '영화 검색 사이트' 만들기
     
 - 홈버튼 클릭시 처음페이지로 넘어감
   
-- 알파벳순 정렬
+- 정렬
+  - 알파벳 순 정렬
+  - 평점 순 정렬
 
 ## 📚 사용 언어 
   <img src="https://img.shields.io/badge/HTML-E34F26.svg?style=for-the-badge&logo=html5&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/CSS-1572B6.svg?style=for-the-badge&logo=css3&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=FFFFFF" />
