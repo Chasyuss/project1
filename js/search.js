@@ -13,7 +13,7 @@ function filter() {
         // 검색어가 타이틀에 포함되어 있는지 확인합니다.
         if (title.indexOf(value) !== -1) {
             listInner[i].style.display = "block";  // 검색어가 포함되어 있으면 표시 
-            //flex로 했더니 전부다 옆으로 밀리는 현상이 발생함
+            //flex로 했더니 전부다 옆으로 밀리는 현상이 발생함 -> block으로 바꿈
         } else {
             listInner[i].style.display = "none";  // 포함되어 있지 않으면 숨깁니다.
         }
