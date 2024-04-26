@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+body {
+    font-family: 'Ownglyph_Dailyokja-Rg';
+    margin: 0;
+    padding: 0;
+    background-color: #AFCBDA;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #E9EFF6;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    font-size: 15px;
+     position: relative;
+}
+
+.logo {
+    color: black;
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+}
+
+.search {
+    position: relative;
+    text-align: right;
+    width: 500px;
+   
+}
+
+.search input {
+    width: calc(100% - 80px); 
+    border-radius: 20px;
+    border: 1px solid #bbb;
+    margin: 10px 0;
+    padding: 10px 12px;
+}
+
+.search button {
+    position: absolute;
+    right: 0; 
+    top: 10px; 
+    color: #fff;
+    padding: 10px 15px; 
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    background-color: #6698cb;
+    border-radius: 20px;
+    cursor: pointer; 
+    border: 1px solid transparent; 
+    /* transition: 0.2s */
+}
+
+
+.home-button {
+    position: absolute; 
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #6698cb; 
+    color: white;
+    border-radius: 20px;
+    cursor: pointer; 
+    border: 1px solid transparent;
+    /* transition: 0.2s; */
+}
+
+.sort-button {
+    background-color: #6698cb; 
+    color: white;
+    border-radius: 20px;
+    cursor: pointer; 
+    border: 1px solid transparent;
+    padding: 10px 10px;
+    margin: 20px;
+}
+
+.search button:hover,
+.sort-button:hover,
+.home-button:hover {
+    background-color: #5578a6; 
+    border: 1px solid rgba(0, 0, 0, 0.21); 
+}
+
+.search button:active,
+.sort-button:active,
+.home-button:active {
+    background-color: #445d87; 
+    transform: scale(0.95); 
+}
+
+
+.movie-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.movie-card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    justify-self: center;
+    background-color: #C8D6DA;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.movie_img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.movie-card  h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.movie-card .vote_average {
+    font-size: 18px;
+}

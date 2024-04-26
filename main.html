@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>영화 검색 사이트</title>
+    <link rel="stylesheet" href="./style/style.css"> 
+</head>
+
+
+<body>
+    <header>
+        <h2 class="logo"> 최고 평점 영화 컬렉션 </h2>
+
+        <!--새로고침 수정 -->
+        <form class="search" onsubmit="return false;">  
+            <input type="text" id= "value" placeholder="검색어를 입력하세요"/>
+            <button type="submit" onclick="filter()"> 검색 </button>
+        </form>
+
+        <button class="home-button" onclick="reloadPage()"> 홈 </button>
+        <button class="sort-button" onclick="sort()"> 알파벳순 정렬 </button>
+    </header>
+
+    <section class="movie-block" id = "movie-block" >
+        <!-- <div class ="movie-card">
+            <<img class = "movie_img" />
+            <h3 class="movie_title"></h3>
+            <p class ="movie_overview"></p>
+            <p class ="vote_average"></p> -->
+        <!-- </div> -->
+    </section>
+    <script>
+        function reloadPage() {
+            location.reload(); // 페이지 새로고침
+        }
+
+    </script>
+    <script src="./js/movie.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/sort.js"></script>
+</body>
+</html>
