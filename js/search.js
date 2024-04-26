@@ -20,8 +20,3 @@ function filter() {
     }
 }
 
-function preventEnter(event) {
-    if (event.key === "Enter") { // 엔터키인지 확인
-        event.preventDefault(); // 엔터키로 폼 제출 방지
-    }
-}
