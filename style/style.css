@@ -28,6 +28,7 @@ header {
     color: black;
     position: absolute;
     left: 20px;
+    font-size: 30px;
 }
 
 .search {
@@ -51,22 +52,47 @@ header {
     top: 10px; 
     color: #fff;
     padding: 10px 15px; 
-    border: 1px solid rgba(0, 0, 0, 0.21);
+    /* border: 1px solid rgba(0, 0, 0, 0.21); */
     border-bottom-color: rgba(0, 0, 0, 0.34);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
     background-color: #6698cb;
     border-radius: 20px;
+    cursor: pointer; 
+
+    border: 1px solid transparent; 
+    transition: 0.2s
+}
+
+.search button:hover {
+    background-color: #5578a6; /* Hover 시 색상 변경 */
+    border: 1px solid rgba(0, 0, 0, 0.21); /* Hover 시 테두리 효과 */
+}
+
+.search button:active {
+    background-color: #445d87; /* 클릭 시 색상 더 어둡게 */
+    transform: scale(0.95); /* 클릭 시 버튼 크기 축소 */
 }
 
 .home {
     position: absolute; 
     right: 30px;
     padding: 10px 15px;
-    border: none;
     background-color: #6698cb; 
     color: white;
     border-radius: 20px;
     cursor: pointer; 
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.home:hover {
+    background-color: #5578a6; 
+    border: 1px solid rgba(0, 0, 0, 0.21); 
+}
+
+.home:active {
+    background-color: #445d87; 
+    transform: scale(0.95); 
 }
 
 .movie-block{
