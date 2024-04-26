@@ -16,6 +16,8 @@
             <input type="text" id= "value" placeholder="검색어를 입력하세요"/>
             <button type="submit" onclick="filter()"> 검색 </button>
         </form>
+
+        <button class="home" onclick="reloadPage()"> 홈 </button>
     </header>
 
     <section class="movie-block">
@@ -26,7 +28,12 @@
             <p class ="vote_average"></p> -->
         </div>
     </section>
+    <script>
+        function reloadPage() {
+            location.reload(); // 페이지 새로고침
+        }
 
+    </script>
     <script src="./js/movie.js"></script>
     <script src="./js/search.js"></script>
 </body>
