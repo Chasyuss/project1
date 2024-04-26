@@ -34,7 +34,7 @@ header {
 .search {
     position: relative;
     text-align: right;
-    width: 500px;
+    width: 400px;
    
 }
 
@@ -84,8 +84,20 @@ header {
     margin: 20px;
 }
 
+.vote-button {
+    background-color: #6698cb; 
+    color: white;
+    border-radius: 20px;
+    cursor: pointer; 
+    border: 1px solid transparent;
+    padding: 10px 10px;
+    margin: 8px;
+
+}
+
 .search button:hover,
 .sort-button:hover,
+.vote-button:hover,
 .home-button:hover {
     background-color: #5578a6; 
     border: 1px solid rgba(0, 0, 0, 0.21); 
@@ -93,6 +105,7 @@ header {
 
 .search button:active,
 .sort-button:active,
+.vote-button:active,
 .home-button:active {
     background-color: #445d87; 
     transform: scale(0.95); 
