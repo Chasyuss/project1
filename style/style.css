@@ -19,15 +19,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: row; */
   font-size: 15px;
   position: relative;
 }
 
 .logo {
   color: black;
-  position: absolute;
-  left: 20px;
+  position: relative;
   font-size: 30px;
 }
 
@@ -57,19 +55,18 @@ header {
   border-radius: 20px;
   cursor: pointer;
   border: 1px solid transparent;
-  /* transition: 0.2s */
 }
 
 .home-button {
-  position: absolute;
+  /* position: absolute; */
   right: 30px;
   padding: 10px 15px;
+  margin-left: 15px;
   background-color: #6698cb;
   color: white;
   border-radius: 20px;
   cursor: pointer;
   border: 1px solid transparent;
-  /* transition: 0.2s; */
 }
 
 .sort-button {
@@ -110,7 +107,6 @@ header {
 
 .movie-block {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
@@ -120,7 +116,6 @@ header {
   margin: 10px;
   padding: 20px;
   width: 80%;
-  justify-self: center;
   background-color: #c8d6da;
   border-radius: 10px;
   cursor: pointer;
